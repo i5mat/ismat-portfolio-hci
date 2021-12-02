@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import moment from 'moment'
 
 Vue.use(VueRouter)
 
@@ -19,6 +20,12 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   }
 ]
+
+Vue.filter('formatDate', function(value) {
+  if (value) {
+      return moment(String(value)).format('Do MMMM YYYY, h:mm A')
+  }
+});
 
 const router = new VueRouter({
   mode: 'history',
