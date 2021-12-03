@@ -189,26 +189,68 @@
       </div>
     </div>
     <div class="container">
-      <div class="row">
-        <div class="col mt-5 mb-5" style="text-align: center">
-          <h1 class="display-1">Personal Information</h1>
+      <div class="row mt-5 mb-5" style="text-align: center">
+        <h1 class="display-1">Work Experience</h1>
+        <div class="col mt-5">
           <img
-            src="/assets/images/ismat.jpg"
-            class="img-fluid rounded-start mb-3"
+            src="/assets/images/XTlogo.png"
+            class="rounded mx-auto d-block mb-3"
             alt="..."
+            width="400px"
+            height="210px"
           />
-          <h4>Wan Muhammad Ismat Bin Wan Azmy</h4>
-          <h5>B031920032</h5>
-          <h5>+(60) 17-217 8319</h5>
+          <h4 class="display-6">Software Developer</h4>
+          <figure>
+            <blockquote class="blockquote">
+              <p>Xmiryna Technology</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Jun 2020 until Present
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col mt-5" style="text-align: center">
+          <img
+            src="/assets/images/tmlogo.png"
+            class="rounded mx-auto d-block mb-3"
+            alt="..."
+            width="400px"
+            height="210px"
+          />
+          <h4 class="display-6">Internship</h4>
+          <figure>
+            <blockquote class="blockquote">
+              <p>Telekom Malaysia</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Jun 2019 until Aug 2019
+            </figcaption>
+          </figure>
         </div>
       </div>
     </div>
     <div class="container-fluid" style="background-color: gray">
       <div class="container">
         <div class="row">
-          <div class="col mt-5 mb-4" style="text-align: center; color: white">
-            <p>Copyright ©️ Ismat Azmy, 2021 for Human Computer Interface</p>
+          <div class="col mt-5 mb-5" style="text-align: center; color: white">
+            <h1 class="display-1">Personal Information</h1>
+            <img
+              src="/assets/images/ismat.jpg"
+              class="img-fluid rounded-start mb-3"
+              alt="..."
+            />
+            <h4>Wan Muhammad Ismat Bin Wan Azmy</h4>
+            <h5>B031920032</h5>
+            <h5>+(60) 17-217 8319</h5>
+            <h5>ismatazmy@live.com</h5>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col mt-5 mb-4" style="text-align: center">
+          <p>Copyright ©️ Ismat Azmy, 2021 for Human Computer Interface</p>
         </div>
       </div>
     </div>
