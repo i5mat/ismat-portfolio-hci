@@ -9,7 +9,7 @@
         </div>
         <div class="col-lg-6 col-xl-7">
           <img
-            src="/assets/images/top.png"
+            src="assets/images/top.png"
             alt=""
             width="512px"
             height="512px"
@@ -23,7 +23,7 @@
         <div class="row">
           <div class="col-lg-6 col-xl-7">
             <img
-              src="/assets/images/learning.png"
+              src="assets/images/learning.png"
               alt=""
               width="512px"
               height="512px"
@@ -133,7 +133,7 @@
       <div class="row">
         <div class="col-lg-6 col-xl-7">
           <img
-            src="/assets/images/Working.png"
+            src="assets/images/Working.png"
             alt=""
             width="512px"
             height="512px"
@@ -193,7 +193,7 @@
         <h1 class="display-1">Work Experience</h1>
         <div class="col mt-5">
           <img
-            src="/assets/images/XTlogo.png"
+            src="assets/images/XTlogo.png"
             class="rounded mx-auto d-block mb-3"
             alt="..."
             width="400px"
@@ -211,7 +211,7 @@
         </div>
         <div class="col mt-5" style="text-align: center">
           <img
-            src="/assets/images/tmlogo.png"
+            src="assets/images/tmlogo.png"
             class="rounded mx-auto d-block mb-3"
             alt="..."
             width="400px"
@@ -235,7 +235,7 @@
           <div class="col mt-5 mb-5" style="text-align: center; color: white">
             <h1 class="display-1">Personal Information</h1>
             <img
-              src="/assets/images/ismat.jpg"
+              src="assets/images/ismat.jpg"
               class="img-fluid rounded-start mb-3"
               alt="..."
             />
