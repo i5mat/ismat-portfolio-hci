@@ -11,8 +11,6 @@
           <img
             src="assets/images/top.png"
             alt=""
-            width="512px"
-            height="512px"
             class="rounded mx-auto d-block"
           />
         </div>
@@ -21,15 +19,16 @@
     <div class="container-fluid" style="background-color: black" id="academic">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-xl-7">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-7">
             <img
               src="assets/images/Learning.png"
               alt=""
               width="512px"
               height="512px"
+              class="rounded mx-auto d-block"
             />
           </div>
-          <div class="col-lg-6 col-xl-5 mt-5" style="color: white">
+          <div class="col-lg-6 col-xl-5" style="color: white" id="academicCol">
             <h1 class="display-1">Academic</h1>
             SMK Taman Melati - 2016
             <span class="badge rounded-pill bg-primary">Secondary School</span
@@ -46,9 +45,9 @@
     <div class="container" id="project">
       <h1 class="display-1 mt-5">My Projects</h1>
       <div class="row mb-5 mt-5">
-        <div class="col">
-          <div class="card text-center">
-            <div class="card-header">
+        <div class="col-sm-12 col-md-6 mb-3">
+          <div class="card text-center h-100">
+            <div class="card-header h-auto">
               <span
                 class="badge rounded-pill bg-primary mx-1"
                 v-for="topic in githubDataEtechify.topics"
@@ -56,7 +55,7 @@
                 >{{ topic }}</span
               >
             </div>
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <h5 class="card-title">{{ githubDataEtechify.full_name }}</h5>
               <p class="card-text">
                 {{ githubDataEtechify.description }}
@@ -64,7 +63,8 @@
               <a
                 :href="githubDataEtechify.html_url"
                 target="_blank"
-                class="btn btn-success"
+                class="btn btn-success w-100"
+                style="margin-top: auto;"
                 >Go</a
               >
             </div>
@@ -73,9 +73,9 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card text-center">
-            <div class="card-header">
+        <div class="col-sm-12 col-md-6 mb-3">
+          <div class="card text-center h-100">
+            <div class="card-header h-auto">
               <span
                 class="badge rounded-pill bg-primary mx-1"
                 v-for="topic in githubDataManagement.topics"
@@ -83,7 +83,7 @@
                 >{{ topic }}</span
               >
             </div>
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <h5 class="card-title">{{ githubDataManagement.full_name }}</h5>
               <p class="card-text">
                 {{ githubDataManagement.description }}
@@ -91,7 +91,8 @@
               <a
                 :href="githubDataManagement.html_url"
                 target="_blank"
-                class="btn btn-success"
+                class="btn btn-success w-100"
+                style="margin-top: auto;"
                 >Go</a
               >
             </div>
@@ -100,7 +101,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-sm-12">
           <div class="card text-center">
             <div class="card-header">
               <span
@@ -137,6 +138,7 @@
             alt=""
             width="512px"
             height="512px"
+            class="rounded mx-auto d-block"
           />
         </div>
         <div class="col-lg-6 col-xl-5 mt-5">
@@ -198,6 +200,7 @@
             alt="..."
             width="400px"
             height="210px"
+            id="xt_img"
           />
           <h4 class="display-6">Software Developer</h4>
           <figure>
@@ -216,6 +219,7 @@
             alt="..."
             width="400px"
             height="210px"
+            id="xt_img"
           />
           <h4 class="display-6">Internship</h4>
           <figure>
@@ -238,6 +242,7 @@
               src="assets/images/ismat.jpg"
               class="img-fluid rounded-start mb-3"
               alt="..."
+              id="personal_img"
             />
             <h4>Wan Muhammad Ismat Bin Wan Azmy</h4>
             <h5>B031920032</h5>
@@ -250,6 +255,15 @@
     <div class="container">
       <div class="row">
         <div class="col mt-5 mb-4" style="text-align: center">
+          <p>
+            <a href="https://www.linkedin.com/in/wan-muhammad-ismat-ba27a7147/">
+              <img
+                src="assets/images/linkedin.png"
+                alt="..."
+                id="linkedin_img"
+              />
+            </a>
+          </p>
           <p>Copyright ©️ Ismat Azmy, 2021 for Human Computer Interface</p>
         </div>
       </div>
@@ -257,6 +271,64 @@
     <go-top :bottom="50" :right="40"></go-top>
   </div>
 </template>
+<style>
+/* xs */
+img {
+    width: 250px;
+    height: auto;
+}
+
+#linkedin_img {
+    width: 64px;
+    height: 64px;
+}
+
+#academicCol {
+  margin-top: 0 !important;
+  margin-bottom: 50px;
+}
+/* sm */
+@media (min-width: 768px) {
+    img {
+        width: 300px;
+        height: 300px;
+    }
+}
+/* md */
+@media (min-width: 992px) {
+    img {
+        width: 200px;
+    }
+}
+/* lg */
+@media (min-width: 1200px) {
+    img {
+        width: 512px;
+        height: 512px;
+    }
+
+    #academicCol {
+      margin-top: 50px !important;
+      margin-bottom: 50px;
+    }
+
+    #xt_img {
+      width: 400px;
+      height: 210px;
+    }
+
+    #tm_img {
+      width: 400px;
+      height: 210px;
+    }
+
+    #personal_img {
+      width: 215px;
+      height: 273px;
+    }
+}
+</style>
+
 <script>
 import axios from "axios";
 import GoTop from '@inotom/vue-go-top';
