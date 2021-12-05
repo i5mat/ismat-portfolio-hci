@@ -1,10 +1,36 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    </div> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">👽 Ismat-Azmy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="#personal_info">About Me</a>
+            <a class="nav-link" href="#academic">Academic</a>
+            <a class="nav-link" href="#project">Projects</a>
+            <a class="nav-link" href="#skill">Skills</a>
+            <a class="nav-link" href="#work">Work Experience</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <router-view />
   </div>
 </template>
 

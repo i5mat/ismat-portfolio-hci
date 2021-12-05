@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="container">
+  <div class="mt-5">
+    <div class="container" id="home">
       <div class="row">
         <div class="col-lg-6 col-xl-5">
           <h1 class="display-1">Hello, I'm Wan Muhammad Ismat</h1>
@@ -18,7 +18,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid" style="background-color: gray">
+    <div class="container-fluid" style="background-color: black" id="academic">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-xl-7">
@@ -43,7 +43,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container" id="project">
       <h1 class="display-1 mt-5">My Projects</h1>
       <div class="row mb-5 mt-5">
         <div class="col">
@@ -129,7 +129,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container" id="skill">
       <div class="row">
         <div class="col-lg-6 col-xl-7">
           <img
@@ -188,7 +188,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container" id="work">
       <div class="row mt-5 mb-5" style="text-align: center">
         <h1 class="display-1">Work Experience</h1>
         <div class="col mt-5">
@@ -229,7 +229,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid" style="background-color: gray">
+    <div class="container-fluid" style="background-color: black" id="personal_info">
       <div class="container">
         <div class="row">
           <div class="col mt-5 mb-5" style="text-align: center; color: white">
@@ -242,7 +242,7 @@
             <h4>Wan Muhammad Ismat Bin Wan Azmy</h4>
             <h5>B031920032</h5>
             <h5>+(60) 17-217 8319</h5>
-            <h5>ismatazmy@live.com</h5>
+            <a href="mailto:ismatazmy@live.com"><h5>ismatazmy@live.com</h5></a>
           </div>
         </div>
       </div>
@@ -254,10 +254,12 @@
         </div>
       </div>
     </div>
+    <go-top :bottom="50" :right="40"></go-top>
   </div>
 </template>
 <script>
 import axios from "axios";
+import GoTop from '@inotom/vue-go-top';
 
 export default {
   data() {
@@ -266,6 +268,9 @@ export default {
       githubDataManagement: [],
       githubDataEtechify: [],
     };
+  },
+  components: {
+    GoTop
   },
   created() {
     this.getGithubDataUEMS();
