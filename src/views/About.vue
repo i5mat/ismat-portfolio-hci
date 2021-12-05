@@ -23,7 +23,7 @@
         <div class="row">
           <div class="col-lg-6 col-xl-7">
             <img
-              src="assets/images/learning.png"
+              src="assets/images/Learning.png"
               alt=""
               width="512px"
               height="512px"
